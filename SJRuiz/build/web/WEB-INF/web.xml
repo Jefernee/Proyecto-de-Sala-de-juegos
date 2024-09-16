@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <!--
+    <context-param>
+        <param-name>jakarta.faces.PROJECT_STAGE</param-name>
+        <param-value>Development</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>jakarta.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        
+        <url-pattern>*.xhtml</url-pattern>
+    
+
+
+
+        configuracion original  <url-pattern>/faces/*</url-pattern>
+        
+        
+        
+        
+    </servlet-mapping>
+    <welcome-file-list>
+        
+        <welcome-file>index.jsp</welcome-file>
+    
+
+         configuracion original  <welcome-file>faces/index.jsp</welcome-file>             
+         poner esto despues de index así veníaxhtml
+        
+        
+        
+    </welcome-file-list> -->
+    <servlet>
+        <servlet-name>ServletClientes</servlet-name>
+        <servlet-class>Controladores.ServletClientes</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InicioSesion</servlet-name>
+        <servlet-class>Controladores.InicioSesion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletInventarioSala</servlet-name>
+        <servlet-class>Controladores.ServletInventarioSala</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletFinanzas</servlet-name>
+        <servlet-class>Controladores.ServletFinanzas</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletUsuarios</servlet-name>
+        <servlet-class>Controladores.ServletUsuarios</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletInformes</servlet-name>
+        <servlet-class>Controladores.ServletInformes</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletHoras</servlet-name>
+        <servlet-class>Controladores.ServletHoras</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletClientes</servlet-name>
+        <url-pattern>/ServletClientes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InicioSesion</servlet-name>
+        <url-pattern>/InicioSesion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletInventarioSala</servlet-name>
+        <url-pattern>/ServletInventarioSala</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletFinanzas</servlet-name>
+        <url-pattern>/ServletFinanzas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletUsuarios</servlet-name>
+        <url-pattern>/ServletUsuarios</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletInformes</servlet-name>
+        <url-pattern>/ServletInformes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletHoras</servlet-name>
+        <url-pattern>/ServletHoras</url-pattern>
+    </servlet-mapping>
+</web-app>
